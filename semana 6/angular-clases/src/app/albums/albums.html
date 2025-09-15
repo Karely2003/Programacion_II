@@ -1,0 +1,16 @@
+<h3>Álbumes</h3>
+
+<ul>
+  @for (album of albums; track album) {
+    <app-album 
+      [imagen]="album.imagen"
+      [titulo]="album.titulo"
+      [anio]="album.anio"
+      [duracion]="album.duracion"
+      [clasificacion]="album.clasificacion"
+      [puntaje]="album.puntaje" />
+  }
+  @empty {
+    <h2>No hay álbumes para mostrar</h2>
+  }
+</ul>

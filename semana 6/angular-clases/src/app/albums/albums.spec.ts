@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Album } from '../album';
+
+describe('AlbumComponent', () => {
+  let component:Album;
+  let fixture: ComponentFixture<Album>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [Album]
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(Album);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

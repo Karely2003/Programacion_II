@@ -1,0 +1,16 @@
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+  padding: 2em;
+  margin: 0;
+  list-style: none;
+  background-color: #f9fbe7;
+}
+
+@media (max-width: 600px) {
+  ul {
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
+}

@@ -1,0 +1,15 @@
+<h3>Artistas</h3>
+
+<ul>
+  @for (artista of artistas; track artista) {
+    <app-artista 
+      [imagen]="artista.imagen"
+      [nombre]="artista.nombre"
+      [genero]="artista.genero"
+      [pais]="artista.pais"
+      [popularidad]="artista.popularidad" />
+  }
+  @empty {
+    <h2>No hay artistas para mostrar</h2>
+  }
+</ul>
