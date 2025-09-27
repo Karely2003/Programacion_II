@@ -1,0 +1,18 @@
+<p>frutas works!</p>
+
+<ul>
+    @for (fruta of frutas; track fruta) {
+        <div class="elmento-fruta">
+            <app-fruta 
+            [Color]="fruta.Sabor"
+            [Sabor]="fruta.Sabor"
+            [Forma]="fruta.Forma"
+            [imagen]="fruta.imagen"
+            [Nombre]="fruta.Nombre"
+            />
+            <button (click)="this.ReproduccionService.agregarFruta(fruta)" >Agregar a lista de reproduccion</button>
+        </div>
+    }@empty {
+        <h2>No haypeliculas para mostrar</h2>
+    }
+</ul>
